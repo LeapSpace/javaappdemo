@@ -15,7 +15,7 @@ public class DemoApplication {
     private JPanel params;
     private JPanel btns;
 
-    public DemoApplication() {
+    private DemoApplication() {
         loginBtn.addActionListener(e -> {
             String un = username.getText();
             String pwd = password.getText();
