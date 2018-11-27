@@ -1,5 +1,7 @@
 package xyz.yukee.javaappdemo;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.swing.*;
 
 /**
@@ -19,7 +21,7 @@ public class DemoApplication {
         loginBtn.addActionListener(e -> {
             String un = username.getText();
             String pwd = password.getText();
-            JOptionPane.showMessageDialog(null, "Hello! " + un);
+            JOptionPane.showMessageDialog(null, "Hello! " + StringUtils.defaultString(un, "test"));
         });
     }
 
